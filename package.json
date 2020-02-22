@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "miniprogram-api-promise": "^1.0.4",
     "miniprogram-sm-crypto": "^0.1.0"
   }
 }
