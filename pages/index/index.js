@@ -1,13 +1,18 @@
-//index.js
-//获取应用实例
+const { $Toast } = require('../../iview/base/index');
 const app = getApp()
 
 Page({
   data: {
     motto: 'Hello World',
+	fixedId:"18074104",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  showToast:()=>{
+	  $Toast({
+		  content:"你点击了一条预约记录"
+	  });
   },
   //事件处理函数
   bindViewTap: function() {

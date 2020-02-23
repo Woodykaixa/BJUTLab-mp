@@ -1,1 +1,8 @@
-{}
+{
+	"usingComponents": {
+		"i-card": "../../iview/card/index",
+		"i-input": "../../iview/input/index",
+		"i-avatar": "../../iview/avatar/index",
+		"i-toast": "../../iview/toast/index"
+	}
+}

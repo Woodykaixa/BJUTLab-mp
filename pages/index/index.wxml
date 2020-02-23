@@ -1,13 +1,24 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <i-card id="base-info" title="基本信息" thumb="{{userInfo.avatarUrl}}">
+                <view slot="content">
+                    <i-input value="{{userInfo.nickName}}" title="用户名" autofocus />
+                </view>
+                <view slot="content">
+                    <i-input value="{{fixedId}}" title="学/工号" disabled />
+                </view>
+                <view slot="content">
+                    <i-input value="{{fixedPw}}" type="password" title="密码" />
+                </view>
+            </i-card>
+			<i-card id="preorder-record" title="预约记录">
+                <view slot="content" wx:for="{{[1,2,3,4,5,6]}}" wx:for-item="i">
+                    <i-input value="记录{{i}}" disabled bindtap="showToast" />
+                </view>
+            </i-card>
+        </block>
+    </view>
+	<i-toast id="toast" />
 </view>
