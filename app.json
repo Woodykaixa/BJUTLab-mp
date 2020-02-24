@@ -1,13 +1,39 @@
 {
 	"pages": [
 		"pages/index/index",
-		"pages/logs/logs"
+		"pages/logs/logs",
+		"pages/me/me",
+		"pages/preorder/preorder",
+		"pages/inform/inform"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
 		"navigationBarBackgroundColor": "#fff",
 		"navigationBarTitleText": "BJUTLab",
 		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#0096c3",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/preorder/preorder",
+				"text": "实验预约"
+			},
+			{
+				"pagePath": "pages/inform/inform",
+				"text": "通知公告"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "个人中心"
+			}
+		]
 	},
 	"style": "v2",
 	"sitemapLocation": "sitemap.json"
