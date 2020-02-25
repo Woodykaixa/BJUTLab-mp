@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+	"usingComponents": {
+		"i-card": "../../iview/card/index",
+		"i-input": "../../iview/input/index",
+		"i-row":"../../iview/row/index",
+		"i-col":"../../iview/col/index"
+	}
 }

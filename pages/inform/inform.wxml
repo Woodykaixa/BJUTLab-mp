@@ -1,2 +1,13 @@
-<!--pages/inform/inform.wxml-->
-<text>pages/inform/inform.wxml</text>
+<view class="bg-bubbles" style="height:100vh;">
+    <view class="gutter" />
+    <i-card title="一种通知" class="bg-bjut-blue">
+        <view slot="content">
+            <i-cell-group>
+                <i-cell wx:for="{{[1,2,3,4,5]}}" wx:for-item="i" title="通知{{i}}" is-link>
+                    <i-icon type="message" size="24" slot="icon" />
+                </i-cell>
+            </i-cell-group>
+        </view>
+    </i-card>
+
+</view>

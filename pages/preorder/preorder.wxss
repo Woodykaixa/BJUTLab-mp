@@ -1,1 +1,5 @@
-/* pages/preorder/preorder.wxss */
+.input-label{
+	text-align: center;
+	margin-top: 5rpx;
+	border: #000000 10px;
+}

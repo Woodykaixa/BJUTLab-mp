@@ -21,3 +21,7 @@
 .link-bubbles::hover {
     color: white;
 }
+
+.gutter {
+	height: 20rpx;
+}

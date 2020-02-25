@@ -1,2 +1,14 @@
-<!--pages/preorder/preorder.wxml-->
-<text>pages/preorder/preorder.wxml</text>
+<view class="bg-bubbles" style="height:100vh;">
+    <view class="gutter" />
+    <i-card title="实验预约">
+        <view slot="content">
+            <form>
+                <i-input title="预约时间" />
+                <i-input title="借用教室" />
+                <i-input title="实验内容" />
+                <i-card title="借用器材">
+				</i-card>
+            </form>
+        </view>
+    </i-card>
+</view>

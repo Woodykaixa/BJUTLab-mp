@@ -1,6 +1,3 @@
 {
-	"usingComponents": {
-		"i-tab-bar":"../../iview/tab-bar/index",
-		"i-tab-bar-item": "../../iview/tab-bar-item/index"
-	}
+	"usingComponents": {}
 }

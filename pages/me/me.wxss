@@ -4,6 +4,3 @@
     margin-right: 5rpx;
 }
 
-.gutter {
-	height: 20rpx;
-}
